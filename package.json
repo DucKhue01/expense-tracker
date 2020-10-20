@@ -1,6 +1,7 @@
 {
   "name": "expense-tracker",
   "version": "0.1.0",
+  "homepage": "http://duckhue01.github.io/expense-tracker",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -15,7 +16,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "homepage": "http://duckhue01.github.io/expense-tracker",
+    
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },

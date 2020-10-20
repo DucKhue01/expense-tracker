@@ -107,7 +107,7 @@ body {
     margin: 12px 0;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(255, 249, 241);
+    background-color: rgb(240, 238, 236);
     box-shadow: var(--box-shadow);
     padding-right: 20px;
 }
@@ -118,8 +118,8 @@ body {
 
 .transaction_item .removeNode{
     cursor: pointer;
-    background-color: rgb(255, 249, 241);
-    color:rgb(255, 249, 241); ;
+    background-color: rgb(240, 238, 236);
+    color: rgb(240, 238, 236);
     width: 35px;
     height: 35px;
     display: flex;
@@ -127,7 +127,7 @@ body {
     align-items: center;
 }
 .transaction_item:hover .removeNode{
-    background-color: red;
+    background-color: rgb(126, 0, 0);
 }
 
 

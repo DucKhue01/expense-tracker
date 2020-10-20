@@ -18,6 +18,8 @@ function AddTransaction({add}) {
                     ...info,
                     id:Math.floor(Math.random() * 10000000000)
                 })
+               
+
             }}
         >
             <div className="form-control">
@@ -33,6 +35,7 @@ function AddTransaction({add}) {
 
                         })
                     }} 
+                    value={info.text}
                 />
             </div>
             <div className="form-control">
@@ -52,6 +55,7 @@ function AddTransaction({add}) {
 
                         })
                     }}
+                    value={info.amount}
                 />
             </div>
             <button 
