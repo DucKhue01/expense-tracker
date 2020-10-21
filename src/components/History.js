@@ -25,7 +25,7 @@ function History() {
             })
         )
        
-    }, [transactions])
+    }, [transactions, remove])
 
     return (
         <div 

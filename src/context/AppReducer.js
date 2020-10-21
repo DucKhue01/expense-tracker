@@ -11,7 +11,7 @@ export default  (state, action) => {
                     return tran.id !== action.payload
                 })
             }
-            break;
+           
         case "ADD":
             return {
                 ...state,
@@ -25,7 +25,7 @@ export default  (state, action) => {
             }
         default:
             return state;
-            break;
+          
     }
 }
 

@@ -9,7 +9,7 @@ function AddTransaction() {
 
     const [info, setInfo] = useState({
         text:"",
-        amount:0
+        amount: 0
     });
 
 
@@ -19,10 +19,20 @@ function AddTransaction() {
             id="form"
             onSubmit={(e) =>{
                 e.preventDefault();
-                return add({
-                    ...info,
-                    id:Math.floor(Math.random() * 10000000000)
-                })
+                if(info.text.length > 0 && info.amount !== 0){
+                    add({
+                        ...info,
+                        id:Math.floor(Math.random() * 10000000000)
+                    })
+                    setInfo({
+                        ...info,
+                        text: "",
+                        amount:0
+    
+                    })
+                }else{
+                    alert("text and amount is required")
+                }
                
 
             }}

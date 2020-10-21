@@ -28,7 +28,7 @@ export const GlobalProvide = ({children}) => {
             payload: data
         })
     }
-
+   
 
     
     return (
