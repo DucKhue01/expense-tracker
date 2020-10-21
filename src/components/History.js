@@ -1,6 +1,13 @@
-import React,  { useEffect, useState} from 'react'
+import React,  { useEffect, useState, useContext} from 'react'
 import TransactionItem from "./TransactionItem";
-function History({transactions, remove}) {
+import { GlobalContext } from "../context/GlobalState";
+
+
+function History() {
+
+    const state = useContext(GlobalContext);
+    const {transactions, remove} = state;
+
  
     const [listItem, setListItem] = useState()
     useEffect(() => {

@@ -1,21 +1,27 @@
-import React, { useEffect , useState } from 'react'
+import React, { useEffect , useState, useContext } from 'react'
+import { GlobalContext } from "../context/GlobalState";
 
 
 
+function Balance() {
+    const state = useContext(GlobalContext);
+    const {transactions} = state;
 
-function Balance({transactions}) {
+    
     const [sum, setSum] = useState(0)    
     useEffect(() => {
        
         
-        setSum( transactions.reduce((acc, curr) => {
+        setSum(transactions.reduce((acc, curr) => {
             return  acc + curr.amount;        
         }, 0))
 
         
        
     }, [transactions])
-    
+
+
+ 
 
     return (
         <div className='balance'>

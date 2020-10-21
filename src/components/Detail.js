@@ -1,6 +1,10 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
+import { GlobalContext } from "../context/GlobalState";
+function Detail() {
 
-function Detail({transactions}) {
+
+    const state = useContext(GlobalContext);
+    const {transactions} = state;
    
     const [sumPos, setSumPos] = useState(0);
     const [sumNeg, setSumNeg] = useState(0)   
